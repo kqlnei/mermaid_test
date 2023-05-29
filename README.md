@@ -17,6 +17,7 @@ Mermaidを触ってみよう
 - カッコいいほど高得点
 
 ## 解答
+```mermaid
 graph LR
     Start(開始) --> Play(プレイ中)
     Play --> GameOver(ゲームオーバー)
