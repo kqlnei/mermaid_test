@@ -18,6 +18,7 @@ Mermaidを触ってみよう
 
 ## 解答
 ```mermaid
+
 graph LR
     Start(開始) --> Play(プレイ中)
     Play --> GameOver(ゲームオーバー)
@@ -28,6 +29,7 @@ graph LR
     Chain -->|連鎖終了| Play
     ClearCheck -->|ぷよ積み上げ| Overstack(オーバースタック)
     Overstack -->|上部まで積み上げ| GameOver
+```
 
 ## シーケンス図
 ### 条件
