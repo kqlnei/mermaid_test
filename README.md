@@ -17,10 +17,16 @@ Mermaidを触ってみよう
 - カッコいいほど高得点
 
 ## 解答
-```mermaid
-flowchart LR;
-  A --> C
-```
+graph LR
+    Start(開始) --> Play(プレイ中)
+    Play --> GameOver(ゲームオーバー)
+    Play -->|ぷよ落下| ClearCheck(連鎖チェック)
+    ClearCheck -->|連鎖あり| Chain(連鎖中)
+    Chain -->|ぷよ消去| ClearCheck
+    ClearCheck -->|連鎖なし| Play
+    Chain -->|連鎖終了| Play
+    ClearCheck -->|ぷよ積み上げ| Overstack(オーバースタック)
+    Overstack -->|上部まで積み上げ| GameOver
 
 ## シーケンス図
 ### 条件
